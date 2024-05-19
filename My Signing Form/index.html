@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1><center>Ahtesham Ali's Assignment</center></h1>
+    <div class="main-div">
+      <div class="image-wrapper">
+
+      </div>
+      <div class="form-wrapper">
+        <div class="main-heading">
+          <h2>Registration Form</h2>
+        </div>
+
+        <form>
+            <label>First Name:</label>
+            <input type="text" id="first_name" required>
+
+            <label>Last Name:</label>
+            <input type="text" id="last_name" required>
+
+            <label>Country</label>
+            <input type="text" id="user_country" required>
+
+            <label>Email Address:</label>
+            <input type="email" id="email_address" required>
+
+            <label>Password</label>
+            <input type="password" id="user_Password" required>
+
+            <button onclick="RegistrationSubmission();">Registration Button</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="database-table">
+        <table cellpadding="15">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Country</th>
+                <th>Registration Date</th>
+                <th>Registration Time</th>
+                <th>Email Address</th>
+                <th>Password</th>
+            </tr>
+
+            <tr>
+                <td id="firstname_place"></td>
+                <td id="lastname_place"></td>
+                <td id="countryname_place"></td>
+                <td id="resgistration_date"></td>
+                <td id="resgistration_time"></td>
+                <td id="email_place"></td>
+                <td id="password_place"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p id="copy_right_place"></p>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
